@@ -38,8 +38,8 @@ public class PopulateListOfFields {
 	public PopulateListOfFields() throws IOException, EncryptedDocumentException, InvalidFormatException {   
 }		
 	public static void main(String[] args) throws EncryptedDocumentException, InvalidFormatException, FileNotFoundException, IOException {
-        FileInputStream fsIP= new FileInputStream(new File("C:\\Users\\Solomon Lo\\eclipse-workspace\\Rough Draft\\CoachInformationList.xlsx")); //change this to Excel file directory with coach preferences!
-        FileInputStream listOfFields = new FileInputStream(new File("C:\\Users\\Solomon Lo\\eclipse-workspace\\Rough Draft\\MyFirstExcel.xlsx")); //change this to Excel file directory with available soccer fields!
+        FileInputStream fsIP= new FileInputStream(new File("[Insert file directory here]")); //change this to Excel file directory with coach preferences!
+        FileInputStream listOfFields = new FileInputStream(new File("[Insert file directory here]"))); //change this to Excel file directory with available soccer fields!
         XSSFWorkbook wb = new XSSFWorkbook(fsIP); //Access the workbook
         XSSFWorkbook things = new XSSFWorkbook(listOfFields);
         coachList = wb.getSheetAt(0); //Access the worksheet, so that we can update / modify it.
